@@ -1,35 +1,35 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import "./App.css";
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+      <nav className="navbar">
+        <img />
+        <h1>Recipe Book</h1>
+        <img />
+      </nav>
+
+      <div className="articles">
+        <section className="section1">
+          <h2>Section1</h2>
+        </section>
+        <section className="section2">
+          <h2>Section2</h2>
+        </section>
+
+        <section id="sidebar">
+          <a href="#">Home</a>
+          <a href="#">Recipes</a>
+          <a href="#">About us </a>
+        </section>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <footer className="footer">
+        <a href="https://github.com/RishiG-cell/mini-project-module2">
+          @Github
+        </a>
+      </footer>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
