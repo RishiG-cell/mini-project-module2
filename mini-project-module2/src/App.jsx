@@ -1,33 +1,34 @@
 import "./App.css";
+import Content from "./components/Content";
+import Footer from "./components/Footer";
+import Navbar from "./components/Navbar";
+import Sidebar from "./components/Sidebar";
+import RecipeData from "./assets/recipes.json";
+import { useState } from "react";
 
 function App() {
+  const [recipes, setRecipes] = useState(RecipeData);
+
+  function handleDelete(recipesId) {
+    console.log("Deleted");
+    const filteredArr = recipes.filter((oneRecipe) => {
+      if (oneRecipe.id !== recipesId) {
+        return true;
+      } else {
+        return false;
+      }
+    });
+    setRecipes(filteredArr);
+  }
   return (
     <>
-      <nav className="navbar">
-        <img />
-        <h1>Recipe Book</h1>
-        <img />
-      </nav>
+      <Navbar />
+      <main>
+        <Sidebar />
+        <Content recipes={recipes} deleteRecipe={handleDelete} />
+      </main>
 
-      <div className="articles">
-        <section className="section1">
-          <h2>Section1</h2>
-        </section>
-        <section className="section2">
-          <h2>Section2</h2>
-        </section>
-
-        <section id="sidebar">
-          <a href="#">Home</a>
-          <a href="#">Recipes</a>
-          <a href="#">About us </a>
-        </section>
-      </div>
-      <footer className="footer">
-        <a href="https://github.com/RishiG-cell/mini-project-module2">
-          @Github
-        </a>
-      </footer>
+      <Footer />
     </>
   );
 }

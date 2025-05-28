@@ -1,45 +1,67 @@
 body {
-  background-color: lightblue;
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
+  background-color: rgb(200, 240, 240);
 }
 
-.navbar {
+main {
   display: flex;
-  border: solid red 2px;
+  justify-content: flex-start;
+  align-items: self-start;
 }
 
-.section1 {
-  border: solid blue 2px;
-  align-self: flex-start;
-  width: 90%;
-  height: 50vh;
+#sidebar {
+  margin-right: 20px;
+  width: 20%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+  border: white solid 2px;
+  box-shadow: black 5px 5px 5px;
 }
 
-.section2 {
-  border: solid yellow 2px;
-  align-self: flex-start;
-  width: 90%;
-  height: 50vh;
+#contentsbox {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer {
+  background-color: grey;
+  text-align: center;
 }
 
 .articles {
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
+  margin: 10px;
+  border: black solid 2px;
+  box-shadow: black 5px 5px 5px;
 }
 
-#sidebar {
-  padding: 10px;
-  margin-top: -101vh;
-  border: solid orange 2px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
-  height: 100vh;
-  width: 10%;
+.articles img {
+  width: 50%;
+  height: 50%;
+}
+
+.infobox {
+  padding: 20px 0px;
+  text-align: center;
+  border: inset rgb(239, 249, 101) 3px;
+  width: 50%;
+}
+.closeBtn {
+  margin: 0 10px;
   align-self: flex-end;
 }
 
-.footer {
-  border: solid grey 2px;
+.closeBtn:hover {
+  background-image: repeating-linear-gradient(red, yellow, green);
+  font-size: 20px;
 }
