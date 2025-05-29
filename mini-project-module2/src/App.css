@@ -2,7 +2,8 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: rgb(200, 240, 240);
+  background-image: url("./assets/background.jpg");
+  background-size: 100%;
 }
 
 main {
@@ -88,4 +89,5 @@ main {
   color: white;
   padding: 20px;
   background-image: url("../src/assets/food.jpg");
+  background-size: 100%;
 }
