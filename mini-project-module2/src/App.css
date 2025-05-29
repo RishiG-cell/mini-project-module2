@@ -22,6 +22,16 @@ main {
   gap: 20px;
   border: white solid 2px;
   box-shadow: black 5px 5px 5px;
+  background-image: url("src/assets/chickewings.jpg");
+  background-size: 100%;
+}
+#sidebar a {
+  font-size: 1.5rem;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  background-color: rgba(255, 153, 0, 0.566);
+  width: 100%;
 }
 
 #contentsbox {
@@ -40,7 +50,7 @@ main {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin: 10px;
+  margin: 0 10px 10px;
   border: black solid 2px;
   box-shadow: black 5px 5px 5px;
 }
@@ -62,6 +72,20 @@ main {
 }
 
 .closeBtn:hover {
-  background-image: repeating-linear-gradient(red, yellow, green);
+  background-image: repeating-linear-gradient(
+    rgba(255, 0, 0, 0.258),
+    rgba(255, 255, 0, 0.301),
+    rgba(0, 128, 0, 0.274)
+  );
   font-size: 20px;
+}
+
+.navbar {
+  margin-bottom: 10px;
+  border: solid black 1px;
+  box-shadow: black 1px 1px 1px;
+  text-align: center;
+  color: white;
+  padding: 20px;
+  background-image: url("../src/assets/food.jpg");
 }

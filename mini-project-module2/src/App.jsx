@@ -1,10 +1,14 @@
 import "./App.css";
-import Content from "./components/Content";
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
 import Sidebar from "./components/Sidebar";
 import RecipeData from "./assets/recipes.json";
+import Homepage from "./pages/Homepage";
+import About from "./pages/About";
+import RecipeDetails from "./pages/RecipeDetails";
+import NotFound from "./pages/NotFound";
 import { useState } from "react";
+import { Routes, Route } from "react-router-dom";
 
 function App() {
   const [recipes, setRecipes] = useState(RecipeData);
@@ -25,7 +29,15 @@ function App() {
       <Navbar />
       <main>
         <Sidebar />
-        <Content recipes={recipes} deleteRecipe={handleDelete} />
+        <Routes>
+          <Route
+            path="/"
+            element={<Homepage recipes={recipes} deleteRecipe={handleDelete} />}
+          />
+          <Route path="/about" element={<About />} />
+          <Route path="/RecipeDetails/:recipeId" element={<RecipeDetails />} />
+          <Route path="*" element={<NotFound />} />
+        </Routes>
       </main>
 
       <Footer />

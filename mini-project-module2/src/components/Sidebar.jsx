@@ -1,9 +1,10 @@
+import { Link } from "react-router-dom";
+
 const Sidebar = () => {
   return (
     <section id="sidebar">
-      <a href="#">Home</a>
-      <a href="#">Recipes</a>
-      <a href="#">About us </a>
+      <Link to="/">Home</Link>
+      <Link to="about">About</Link>
     </section>
   );
 };
