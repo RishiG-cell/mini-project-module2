@@ -91,3 +91,25 @@ main {
   background-image: url("../src/assets/food.jpg");
   background-size: 100%;
 }
+
+#form-new-recipe {
+  border: solid rgb(255, 255, 255) 2px;
+  box-shadow: black 5px 5px 5px;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#form-new-recipe form {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  gap: 10px;
+}
+
+#form-new-recipe button {
+  margin: 10px;
+  padding: 5px 10px;
+  width: 20%;
+}

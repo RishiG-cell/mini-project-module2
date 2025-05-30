@@ -5,6 +5,7 @@ const Sidebar = () => {
     <section id="sidebar">
       <Link to="/">Home</Link>
       <Link to="about">About</Link>
+      <Link to="add-recipe">Add your recipe ! </Link>
     </section>
   );
 };

@@ -9,6 +9,7 @@ import RecipeDetails from "./pages/RecipeDetails";
 import NotFound from "./pages/NotFound";
 import { useState } from "react";
 import { Routes, Route } from "react-router-dom";
+import AddRecipe from "./components/AddRecipe";
 
 function App() {
   const [recipes, setRecipes] = useState(RecipeData);
@@ -32,10 +33,20 @@ function App() {
         <Routes>
           <Route
             path="/"
-            element={<Homepage recipes={recipes} deleteRecipe={handleDelete} />}
+            element={
+              <Homepage
+                recipes={recipes}
+                deleteRecipe={handleDelete}
+                RecipeData={RecipeData}
+              />
+            }
           />
           <Route path="/about" element={<About />} />
-          <Route path="/RecipeDetails/:recipeId" element={<RecipeDetails />} />
+          <Route path="/recipe-details/:recipeId" element={<RecipeDetails />} />
+          <Route
+            path="/add-recipe"
+            element={<AddRecipe recipes={recipes} setRecipes={setRecipes} />}
+          />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </main>
