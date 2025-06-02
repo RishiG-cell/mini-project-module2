@@ -7,9 +7,9 @@ import Homepage from "./pages/Homepage";
 import About from "./pages/About";
 import RecipeDetails from "./pages/RecipeDetails";
 import NotFound from "./pages/NotFound";
-import { useState } from "react";
-import { Routes, Route } from "react-router-dom";
 import AddRecipe from "./components/AddRecipe";
+import EditRecipe from "./components/EditRecipe"; 
+
 
 function App() {
   const [recipes, setRecipes] = useState(RecipeData);
@@ -17,14 +17,11 @@ function App() {
   function handleDelete(recipesId) {
     console.log("Deleted");
     const filteredArr = recipes.filter((oneRecipe) => {
-      if (oneRecipe.id !== recipesId) {
-        return true;
-      } else {
-        return false;
-      }
+      return oneRecipe.id !== recipesId;
     });
     setRecipes(filteredArr);
   }
+
   return (
     <>
       <Navbar />
@@ -37,20 +34,35 @@ function App() {
               <Homepage
                 recipes={recipes}
                 deleteRecipe={handleDelete}
-                RecipeData={RecipeData}
               />
             }
           />
           <Route path="/about" element={<About />} />
-          <Route path="/recipe-details/:recipeId" element={<RecipeDetails />} />
+          <Route
+            path="/recipe-details/:recipeId"
+            element={<RecipeDetails />}
+          />
           <Route
             path="/add-recipe"
-            element={<AddRecipe recipes={recipes} setRecipes={setRecipes} />}
+            element={
+              <AddRecipe
+                recipes={recipes}
+                setRecipes={setRecipes}
+              />
+            }
+          />
+          <Route
+            path="/edit-recipe/:recipeId"
+            element={
+              <EditRecipe
+                recipes={recipes}
+                setRecipes={setRecipes}
+              />
+            }
           />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </main>
-
       <Footer />
     </>
   );
