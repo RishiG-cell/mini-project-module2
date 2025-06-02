@@ -3,10 +3,7 @@ import { Link } from "react-router-dom";
 const FoodCard = ({ oneRecipe, deleteRecipe }) => {
   return (
     <div className="articles">
-      <div
-        className="closeBtn"
-        onClick={() => deleteRecipe(oneRecipe.id)}
-      >
+      <div className="closeBtn" onClick={() => deleteRecipe(oneRecipe.id)}>
         ❌
       </div>
       <h1>{oneRecipe.name}</h1>

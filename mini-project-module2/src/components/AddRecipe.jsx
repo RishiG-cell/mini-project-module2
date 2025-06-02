@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-const AddRecipe = ({ recipes, setRecipes }) => {
+const AddRecipe = ({ recipes, setRecipes, ToastContainer, wave }) => {
   const [name, SetName] = useState("");
   const [image, SetImage] = useState("");
   const [calories, SetCalories] = useState(0);
@@ -56,7 +56,10 @@ const AddRecipe = ({ recipes, setRecipes }) => {
           onChange={(e) => SetServings(e.target.value)}
         />
 
-        <button>Submit</button>
+        <button onClick={wave}>Submit</button>
+        <div>
+          <ToastContainer />
+        </div>
       </form>
     </div>
   );

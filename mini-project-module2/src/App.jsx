@@ -11,10 +11,12 @@ import AddRecipe from "./components/AddRecipe";
 import EditRecipe from "./components/EditRecipe"; // <- importação nova
 import { useState } from "react";
 import { Routes, Route } from "react-router-dom";
+import { ToastContainer, toast } from "react-toast";
 
 function App() {
   const [recipes, setRecipes] = useState(RecipeData);
-
+  const wave = () =>
+    toast("👨🏼‍🍳Thats sounds amazing! , lets try this recipe chef👨🏼‍🍳 ");
   function handleDelete(recipesId) {
     console.log("Deleted");
     const filteredArr = recipes.filter((oneRecipe) => {
@@ -31,35 +33,25 @@ function App() {
         <Routes>
           <Route
             path="/"
-            element={
-              <Homepage
-                recipes={recipes}
-                deleteRecipe={handleDelete}
-              />
-            }
+            element={<Homepage recipes={recipes} deleteRecipe={handleDelete} />}
           />
           <Route path="/about" element={<About />} />
-          <Route
-            path="/recipe-details/:recipeId"
-            element={<RecipeDetails />}
-          />
+          <Route path="/recipe-details/:recipeId" element={<RecipeDetails />} />
           <Route
             path="/add-recipe"
             element={
               <AddRecipe
                 recipes={recipes}
                 setRecipes={setRecipes}
+                wave={wave}
+                toast={toast}
+                ToastContainer={ToastContainer}
               />
             }
           />
           <Route
             path="/edit-recipe/:recipeId"
-            element={
-              <EditRecipe
-                recipes={recipes}
-                setRecipes={setRecipes}
-              />
-            }
+            element={<EditRecipe recipes={recipes} setRecipes={setRecipes} />}
           />
           <Route path="*" element={<NotFound />} />
         </Routes>

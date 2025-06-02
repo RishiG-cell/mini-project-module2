@@ -55,6 +55,15 @@ main {
   border: black solid 2px;
   box-shadow: black 5px 5px 5px;
 }
+@media (max-width: 992px) {
+  #contentsbox {
+    display: flex;
+    flex-wrap: nowrap;
+    height: 100vh;
+    overflow-x: auto;
+    width: 80%;
+  }
+}
 
 .articles img {
   width: 50%;
