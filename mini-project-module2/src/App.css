@@ -69,6 +69,10 @@ main {
   width: 50%;
   height: 50%;
 }
+.articles img:hover {
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
 
 .infobox {
   padding: 20px 0px;
