@@ -38,10 +38,6 @@ const EditRecipe = ({ recipes, setRecipes }) => {
     navigate("/");
   };
 
-  const handleGoBack = () => {
-    navigate(-1);  
-  };
-
   return (
     <div id="form-new-recipe">
       <h1>Edit Recipe</h1>
@@ -66,9 +62,8 @@ const EditRecipe = ({ recipes, setRecipes }) => {
           onChange={(e) => setServings(e.target.value)}
         />
 
-        <button type="submit">Update</button>
+        <button>Update</button>
       </form>
-
     </div>
   );
 };

@@ -4,48 +4,56 @@ const AddRecipe = ({ recipes, setRecipes }) => {
   const [name, SetName] = useState("");
   const [image, SetImage] = useState("");
   const [calories, SetCalories] = useState(0);
+  const [servings, SetServings] = useState(1);
 
   function handleNewRecipe(event) {
     event.preventDefault();
     const toAddRecipe = {
+      id: crypto.randomUUID(),
       name,
       image,
-      calories,
+      calories: Number(calories),
+      servings: Number(servings),
     };
-    console.log(recipes);
+
     setRecipes([...recipes, toAddRecipe]);
 
     SetName("");
     SetImage("");
     SetCalories(0);
+    SetServings(1);
   }
 
   return (
     <div id="form-new-recipe">
-      <h1>Add Recipe</h1>;
+      <h1>Add Recipe</h1>
       <form onSubmit={handleNewRecipe}>
-        <label>Name of the dish: </label>
+        <label>Name of the dish:</label>
         <input
           type="text"
-          name="name"
           value={name}
-          onChange={(event) => SetName(event.target.value)}
+          onChange={(e) => SetName(e.target.value)}
         />
 
-        <label>Picture: </label>
+        <label>Picture:</label>
         <input
           type="text"
-          image="image"
           value={image}
-          onChange={(event) => SetImage(event.target.value)}
+          onChange={(e) => SetImage(e.target.value)}
         />
 
-        <label>Calories: </label>
+        <label>Calories:</label>
         <input
           type="number"
-          calories="calories"
           value={calories}
-          onChange={(event) => SetCalories(event.target.value)}
+          onChange={(e) => SetCalories(e.target.value)}
+        />
+
+        <label>Servings:</label>
+        <input
+          type="number"
+          value={servings}
+          onChange={(e) => SetServings(e.target.value)}
         />
 
         <button>Submit</button>

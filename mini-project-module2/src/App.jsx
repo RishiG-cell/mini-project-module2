@@ -8,8 +8,9 @@ import About from "./pages/About";
 import RecipeDetails from "./pages/RecipeDetails";
 import NotFound from "./pages/NotFound";
 import AddRecipe from "./components/AddRecipe";
-import EditRecipe from "./components/EditRecipe"; 
-
+import EditRecipe from "./components/EditRecipe"; // <- importação nova
+import { useState } from "react";
+import { Routes, Route } from "react-router-dom";
 
 function App() {
   const [recipes, setRecipes] = useState(RecipeData);
