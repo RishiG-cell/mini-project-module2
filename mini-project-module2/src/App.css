@@ -35,6 +35,11 @@ main {
   width: 100%;
 }
 
+#sidebar a:hover {
+  color: yellow;
+  background-color: rgba(0, 0, 0, 0.246);
+}
+
 #contentsbox {
   width: 80%;
   display: flex;
@@ -53,6 +58,7 @@ main {
   flex-direction: column;
   margin: 0 10px 10px;
   border: black solid 2px;
+  border-radius: 20px;
   box-shadow: black 5px 5px 5px;
 }
 @media (max-width: 992px) {
@@ -60,7 +66,7 @@ main {
     display: flex;
     flex-wrap: nowrap;
     height: 100vh;
-    overflow-x: auto;
+    overflow: auto;
     width: 80%;
   }
 }
@@ -79,6 +85,14 @@ main {
   text-align: center;
   border: inset rgb(239, 249, 101) 3px;
   width: 50%;
+}
+
+.articles:hover {
+  background-image: repeating-linear-gradient(
+    rgba(0, 128, 0, 0.274),
+    rgba(255, 255, 0, 0.301),
+    rgba(255, 0, 0, 0.258)
+  );
 }
 .closeBtn {
   margin: 0 10px;
@@ -103,6 +117,12 @@ main {
   padding: 20px;
   background-image: url("../src/assets/food.jpg");
   background-size: 100%;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: white;
+  font-size: 30px;
 }
 
 #form-new-recipe {
