@@ -4,118 +4,282 @@
     "name": "Pizza",
     "calories": 400,
     "image": "https://i.imgur.com/eTmWoAN.png",
-    "servings": 1
+    "servings": 1,
+    "ingredients": [
+      "Dough",
+      "Tomato Sauce",
+      "Mozzarella",
+      "Olive Oil",
+      "Basil"
+    ],
+    "steps": [
+      "Preheat oven to 475°F (245°C).",
+      "Roll out the pizza dough on a floured surface.",
+      "Spread tomato sauce over the dough.",
+      "Top with mozzarella and drizzle olive oil.",
+      "Bake for 10–15 minutes until cheese is bubbly.",
+      "Garnish with basil before serving."
+    ]
   },
   {
     "id": "37e0b31d-63f4-4d42-9f4b-e9a0fc464d60",
     "name": "Salad",
     "calories": 150,
     "image": "https://i.imgur.com/DupGBz5.jpg",
-    "servings": 1
+    "servings": 1,
+    "ingredients": ["Lettuce", "Tomato", "Cucumber", "Olive Oil", "Vinegar"],
+    "steps": [
+      "Wash and chop the vegetables.",
+      "Toss lettuce, tomato, and cucumber in a bowl.",
+      "Drizzle with olive oil and vinegar.",
+      "Add salt and pepper to taste.",
+      "Serve immediately."
+    ]
   },
   {
     "id": "b5eb5b5f-41b8-4f1f-8844-7a1a56a17df7",
     "name": "Sweet Potato",
     "calories": 120,
     "image": "https://i.imgur.com/hGraGyR.jpg",
-    "servings": 1
+    "servings": 1,
+    "ingredients": ["Sweet Potato", "Olive Oil", "Salt", "Pepper"],
+    "steps": [
+      "Preheat oven to 400°F (200°C).",
+      "Peel and cube the sweet potato.",
+      "Toss with olive oil, salt, and pepper.",
+      "Spread on a baking sheet.",
+      "Roast for 25–30 minutes until tender."
+    ]
   },
   {
     "id": "6c0f6f33-8c50-403d-9d1c-6ac9d8b77f29",
     "name": "Gnocchi",
     "calories": 500,
     "image": "https://i.imgur.com/93ekwW0.jpg",
-    "servings": 1
+    "servings": 1,
+    "ingredients": ["Potatoes", "Flour", "Eggs", "Salt", "Parmesan"],
+    "steps": [
+      "Boil and mash the potatoes.",
+      "Mix with flour, egg, and salt to form dough.",
+      "Roll into ropes and cut into small pieces.",
+      "Boil until gnocchi float to the top.",
+      "Serve with sauce and Parmesan."
+    ]
   },
   {
     "id": "f4b4d2bc-ff12-4f3f-b3b3-19d2f1682401",
     "name": "Pot Roast",
     "calories": 350,
     "image": "https://i.imgur.com/WCzJDWz.jpg",
-    "servings": 1
+    "servings": 1,
+    "ingredients": ["Beef", "Carrots", "Potatoes", "Onions", "Beef Broth"],
+    "steps": [
+      "Season and sear the beef on all sides.",
+      "Add chopped vegetables to the pot.",
+      "Pour in beef broth and cover.",
+      "Simmer on low heat for 3–4 hours.",
+      "Serve hot with vegetables."
+    ]
   },
   {
     "id": "bf89c1db-5c5b-4262-9d1e-8a68f88c61d5",
     "name": "Lasagna",
     "calories": 750,
     "image": "https://i.imgur.com/ClxOafl.jpg",
-    "servings": 1
+    "servings": 1,
+    "ingredients": [
+      "Lasagna Noodles",
+      "Ground Beef",
+      "Tomato Sauce",
+      "Ricotta",
+      "Mozzarella"
+    ],
+    "steps": [
+      "Cook the noodles and brown the ground beef.",
+      "Layer noodles, sauce, ricotta, and mozzarella in a dish.",
+      "Repeat layers and top with cheese.",
+      "Bake at 375°F (190°C) for 45 minutes.",
+      "Let cool slightly before serving."
+    ]
   },
   {
     "id": "bca9beec-43d3-48b1-9b57-793a8a8c3520",
     "name": "Hamburger",
     "calories": 400,
     "image": "https://i.imgur.com/LoG39wK.jpg",
-    "servings": 1
+    "servings": 1,
+    "ingredients": [
+      "Beef Patty",
+      "Burger Bun",
+      "Lettuce",
+      "Tomato",
+      "Cheddar Cheese"
+    ],
+    "steps": [
+      "Grill or pan-fry the beef patty.",
+      "Toast the burger bun if desired.",
+      "Assemble with lettuce, tomato, cheese, and patty.",
+      "Add condiments as desired.",
+      "Serve immediately."
+    ]
   },
   {
     "id": "b777a69a-7f1c-41e8-8a4c-1d0e9e4cace8",
     "name": "Pad Thai",
     "calories": 475,
     "image": "https://i.imgur.com/5ktcSzF.jpg",
-    "servings": 1
+    "servings": 1,
+    "ingredients": [
+      "Rice Noodles",
+      "Tofu or Shrimp",
+      "Peanuts",
+      "Egg",
+      "Bean Sprouts",
+      "Tamarind Sauce"
+    ],
+    "steps": [
+      "Soak rice noodles in warm water.",
+      "Stir-fry tofu/shrimp and scramble the egg.",
+      "Add noodles and tamarind sauce.",
+      "Stir in bean sprouts and peanuts.",
+      "Serve hot with lime wedges."
+    ]
   },
   {
     "id": "d087343e-9a92-48c7-8b27-43e37491b6f5",
     "name": "Almonds",
     "calories": 75,
     "image": "https://i.imgur.com/JRp4Ksx.jpg",
-    "servings": 1
+    "servings": 1,
+    "ingredients": ["Almonds"],
+    "steps": [
+      "Measure a serving of almonds.",
+      "Serve raw or lightly roasted as desired."
+    ]
   },
   {
     "id": "e1f87a2e-60b3-4a3f-bb48-20a396a9a94f",
     "name": "Sarma",
     "calories": 200,
     "image": "https://i.imgur.com/yOlf4Fj.jpg",
-    "servings": 1
+    "servings": 1,
+    "ingredients": [
+      "Cabbage Leaves",
+      "Ground Meat",
+      "Rice",
+      "Onion",
+      "Paprika"
+    ],
+    "steps": [
+      "Mix ground meat, rice, onion, and spices.",
+      "Place filling in cabbage leaves and roll tightly.",
+      "Stack in a pot and cover with water or broth.",
+      "Simmer on low for 1.5–2 hours.",
+      "Serve warm."
+    ]
   },
   {
     "id": "0ce7e4d4-1c8a-4e9f-98df-1ecb1e7b8a0b",
     "name": "Bacon",
     "calories": 175,
     "image": "https://i.imgur.com/7GlqDsG.jpg",
-    "servings": 1
+    "servings": 1,
+    "ingredients": ["Pork Belly", "Salt", "Sugar", "Smoke"],
+    "steps": [
+      "Place bacon strips in a cold pan.",
+      "Cook over medium heat until crispy.",
+      "Drain on paper towels.",
+      "Serve hot or crumble over dishes."
+    ]
   },
   {
     "id": "bbfd30fd-cd75-4e3b-8fc8-3d3fd62a3c39",
     "name": "Hot Dog",
     "calories": 275,
     "image": "https://i.imgur.com/QqVHdRu.jpg",
-    "servings": 1
+    "servings": 1,
+    "ingredients": ["Sausage", "Hot Dog Bun", "Mustard", "Ketchup", "Relish"],
+    "steps": [
+      "Boil or grill the sausage.",
+      "Warm the bun if desired.",
+      "Place sausage in the bun.",
+      "Add toppings like mustard, ketchup, and relish.",
+      "Serve immediately."
+    ]
   },
   {
     "id": "1c6d5b5f-4e72-4136-8c6c-9cf3e3d16a65",
     "name": "Chocolate Cake",
     "calories": 490,
     "image": "https://i.imgur.com/yrgzA9x.jpg",
-    "servings": 1
+    "servings": 1,
+    "ingredients": [
+      "Flour",
+      "Cocoa Powder",
+      "Sugar",
+      "Eggs",
+      "Butter",
+      "Chocolate Frosting"
+    ],
+    "steps": [
+      "Preheat oven to 350°F (175°C).",
+      "Mix dry and wet ingredients separately, then combine.",
+      "Pour batter into a greased cake pan.",
+      "Bake for 30–35 minutes.",
+      "Cool and frost before serving."
+    ]
   },
   {
     "id": "07d9616d-7a63-457c-b8a7-58f6a70a67e3",
     "name": "Wheat Bread",
     "calories": 175,
     "image": "https://i.imgur.com/TsWzMfM.jpg",
-    "servings": 1
+    "servings": 1,
+    "ingredients": ["Whole Wheat Flour", "Water", "Yeast", "Salt", "Honey"],
+    "steps": [
+      "Mix flour, yeast, salt, and water.",
+      "Knead dough and let rise until doubled.",
+      "Shape into a loaf and place in a pan.",
+      "Bake at 375°F (190°C) for 30–35 minutes.",
+      "Cool before slicing."
+    ]
   },
   {
     "id": "d7a8f0c1-0a34-4e3b-a2d3-3c3e3f11eb19",
     "name": "Orange",
     "calories": 85,
     "image": "https://i.imgur.com/abKGOcv.jpg",
-    "servings": 1
+    "servings": 1,
+    "ingredients": ["Orange"],
+    "steps": ["Peel the orange.", "Separate into slices.", "Serve fresh."]
   },
   {
     "id": "a8d111c4-50ef-4c61-8b16-17e84a86b2f4",
     "name": "Banana",
     "calories": 175,
     "image": "https://i.imgur.com/BMdJhu5.jpg",
-    "servings": 1
+    "servings": 1,
+    "ingredients": ["Banana"],
+    "steps": ["Peel the banana.", "Eat fresh or slice for topping."]
   },
   {
     "id": "62d8a0bc-1b77-4389-9e7b-2e00cace6a2e",
     "name": "Yogurt",
     "calories": 125,
     "image": "https://i.imgur.com/URhdrAm.png",
-    "servings": 1
+    "servings": 1,
+    "ingredients": [
+      "Milk",
+      "Live Cultures",
+      "Fruit (optional)",
+      "Sugar (optional)"
+    ],
+    "steps": [
+      "Heat milk to 180°F (82°C), then cool to 110°F (43°C).",
+      "Add live yogurt cultures.",
+      "Let ferment for 6 8 hours.",
+      "Chill before serving.",
+      "Add fruit or sweeteners if desired."
+    ]
   }
 ]

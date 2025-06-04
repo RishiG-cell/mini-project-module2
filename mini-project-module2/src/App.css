@@ -146,3 +146,32 @@ main {
   padding: 5px 10px;
   width: 20%;
 }
+
+.details-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 153, 0, 0.566);
+  border-radius: 100px;
+  color: rgba(255, 255, 255, 0.868);
+}
+
+.details-container img {
+  width: 80%;
+}
+.info-details {
+  margin: 30px;
+  font-size: larger;
+  border: solid white 2px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+}
+
+.info-details li:hover {
+  color: red;
+  transition-duration: 1.5s;
+}

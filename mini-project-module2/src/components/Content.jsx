@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import FoodCard from "./FoodCard";
 
 const Content = ({ recipes, deleteRecipe }) => {
