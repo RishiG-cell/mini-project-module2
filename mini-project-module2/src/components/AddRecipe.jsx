@@ -1,10 +1,12 @@
-import { useState } from "react";
+import { use, useState } from "react";
 
 const AddRecipe = ({ recipes, setRecipes, ToastContainer, wave }) => {
   const [name, SetName] = useState("");
   const [image, SetImage] = useState("");
   const [calories, SetCalories] = useState(0);
   const [servings, SetServings] = useState(1);
+  const [ingredients, setIngredients] = useState("");
+  const [steps, setSteps] = useState("");
 
   function handleNewRecipe(event) {
     event.preventDefault();
@@ -14,6 +16,8 @@ const AddRecipe = ({ recipes, setRecipes, ToastContainer, wave }) => {
       image,
       calories: Number(calories),
       servings: Number(servings),
+      ingredients,
+      steps,
     };
 
     setRecipes([...recipes, toAddRecipe]);
@@ -22,6 +26,8 @@ const AddRecipe = ({ recipes, setRecipes, ToastContainer, wave }) => {
     SetImage("");
     SetCalories(0);
     SetServings(1);
+    setIngredients("");
+    setSteps("");
   }
 
   return (
@@ -54,6 +60,20 @@ const AddRecipe = ({ recipes, setRecipes, ToastContainer, wave }) => {
           type="number"
           value={servings}
           onChange={(e) => SetServings(e.target.value)}
+        />
+
+        <label>Ingredients:</label>
+        <input
+          type="text"
+          value={ingredients}
+          onChange={(e) => setIngredients(e.target.value)}
+        />
+
+        <label>Steps:</label>
+        <input
+          type="text"
+          value={steps}
+          onChange={(e) => setSteps(e.target.value)}
         />
 
         <button onClick={wave}>Submit</button>
