@@ -1,12 +1,13 @@
 import { use, useState } from "react";
+import { Navigate } from "react-router-dom";
 
 const AddRecipe = ({ recipes, setRecipes, ToastContainer, wave }) => {
   const [name, SetName] = useState("");
   const [image, SetImage] = useState("");
   const [calories, SetCalories] = useState(0);
   const [servings, SetServings] = useState(1);
-  const [ingredients, setIngredients] = useState("");
-  const [steps, setSteps] = useState("");
+  const [ingredients, setIngredients] = useState([]);
+  const [steps, setSteps] = useState([]);
 
   function handleNewRecipe(event) {
     event.preventDefault();
@@ -26,8 +27,8 @@ const AddRecipe = ({ recipes, setRecipes, ToastContainer, wave }) => {
     SetImage("");
     SetCalories(0);
     SetServings(1);
-    setIngredients("");
-    setSteps("");
+    setIngredients([]);
+    setSteps([]);
   }
 
   return (
